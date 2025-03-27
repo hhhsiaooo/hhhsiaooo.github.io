@@ -1,0 +1,48 @@
+<h2 id="專案背景"><strong>專案背景</strong></h2>
+<p>為推動<strong><mark style="background-color: white; color: #478da7;">政府採購資料的開放與應用</mark></strong>，並與國際標準接軌，
+專案參考 Open Contracting Partnership 所訂定之<strong><mark style="background-color: white; color: #478da7;">Open Contracting Data Standard（OCDS）</mark></strong>，
+將電子採購網資料進行轉換，使其符合國際開放採購資料標準，促進公開透明與跨國合作。
+未來可提供更具結構化、標準化的採購資訊，讓個人、學術機構、民間團體及企業等使用者更容易存取與分析，
+透過專案產出的採購管理儀表板，展現了資料應用的可能性。</p>
+
+<h2 id="實作流程"><strong>實作流程</strong></h2>
+
+<h4 id="1指標設計">1.指標設計</h4>
+<p>參考<strong><mark style="background-color: white; color: #478da7;">Open Contracting Partnership 所建議之風險管理指標</mark></strong>
+，並根據國內採購法律規定進行調整， 訂出合適的管理指標清單與衡量標準。</p>
+
+<h4 id="2資料蒐集">2.資料蒐集</h4>
+<p>盤點管理指標清單所需資料欄位，使用<strong><mark style="background-color: white; color: #478da7;">「中華民國政府電子採購網」</mark></strong>
+之招標公告與決標公告，
+取得標案相關資訊。例如：標的分類、招標方式、決標方式、決標金額、招標日期等資訊。</p>
+
+<h4 id="3資料轉換">3.資料轉換</h4>
+<p>使用 Open Contracting Partnership 提供之資料轉換程式，將電子採購網資料對應至OCDS規範的資料階層，
+並使用官方工具驗證檔案符合採購資料標準，產出資料交換格式JSON檔案。</p>
+<ul>
+  <li>
+    <p>資料階層對照：將電子採購網的資料欄位，對應 Open Contracting Data Standard（OCDS）資料階層。
+<img src="/assets/images/ocds_mapping.jpg" alt="Jekyll Logo" /></p>
+  </li>
+  <li>
+    <p>JSON檔轉換程式：填寫 Open Contracting Partnership 提供的資料轉換工作表。
+<img src="/assets/images/ocds_transformation.jpg" alt="Jekyll Logo" /></p>
+  </li>
+  <li>
+    <p>資料驗證：將資料轉換工作表上傳至官方驗證工具 Data Review Tool。
+<img src="/assets/images/ocds_validation.jpg" alt="Jekyll Logo" /></p>
+  </li>
+</ul>
+
+<h4 id="4儀表板建置">4.儀表板建置</h4>
+<p>使用 Google Looker Studio 進行開發，包含兩種指標構面：</p>
+<ul>
+  <li><strong><mark style="background-color: white; color: #478da7;">採購案件現況</mark></strong>。例如：標案類型佔比、決標金額佔比、標案地區分布等統計資訊。</li>
+  <li><strong><mark style="background-color: white; color: #478da7;">招標與決標階段的管理指標</mark></strong>。例如：投標廠商家數、等標期分布。</li>
+  <li>儀表板圖表示意圖
+<img src="/assets/images/ocds_chart1.jpg" alt="Jekyll Logo" />
+<img src="/assets/images/ocds_chart2.jpg" alt="Jekyll Logo" />
+<img src="/assets/images/ocds_chart3.jpg" alt="Jekyll Logo" /></li>
+</ul>
+
+<h2 id="學習到甚麼"><strong>學習到甚麼</strong></h2>

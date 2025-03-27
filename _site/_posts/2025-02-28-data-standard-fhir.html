@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>【公司專案】醫院評鑑分析儀表板 | 首頁</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="【公司專案】醫院評鑑分析儀表板" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="© 2025 個人專案經歷, All rights reserved." />
+<meta property="og:description" content="© 2025 個人專案經歷, All rights reserved." />
+<link rel="canonical" href="http://hhhsiaooo.github.io/_posts/2025-02-28-data-standard-fhir.html" />
+<meta property="og:url" content="http://hhhsiaooo.github.io/_posts/2025-02-28-data-standard-fhir.html" />
+<meta property="og:site_name" content="首頁" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-02-28T00:00:00+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="【公司專案】醫院評鑑分析儀表板" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-02-28T00:00:00+08:00","datePublished":"2025-02-28T00:00:00+08:00","description":"© 2025 個人專案經歷, All rights reserved.","headline":"【公司專案】醫院評鑑分析儀表板","mainEntityOfPage":{"@type":"WebPage","@id":"http://hhhsiaooo.github.io/_posts/2025-02-28-data-standard-fhir.html"},"url":"http://hhhsiaooo.github.io/_posts/2025-02-28-data-standard-fhir.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://hhhsiaooo.github.io/feed.xml" title="首頁" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">首頁</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">【公司專案】醫院評鑑分析儀表板</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2025-02-28T00:00:00+08:00" itemprop="datePublished">Feb 28, 2025
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h2 id="專案背景"><strong>專案背景</strong></h2>
+<p>目前台灣醫院各自開發自有的醫療資訊系統，醫院評鑑中的醫療品質指標資料未進行標準化，
+無法滿足智慧醫療發展的需求。</p>
+
+<p>為解決此問題，本專案協助盤點醫療品質指標相關資料，
+基於<strong><mark style="background-color: #ffff77; color: black;">FHIR（Fast Healthcare Interoperability Resources）及 TW Core IG</mark></strong>進行規範，
+並透過示範儀表板，驗證標準化資料的應用可行性。</p>
+
+<h2 id="實作流程"><strong>實作流程</strong></h2>
+<blockquote>
+  <p>此為團隊合作專案，我負責的項目為<strong><mark style="background-color: #ffff77; color: black;">「FHIR資料標準」</mark></strong>
+與<strong><mark style="background-color: #ffff77; color: black;">「儀表板建置」</mark></strong>。
+因專案時程有限，在團隊成員研究資料分布、尚未產出合成資料前，
+我先使用測試資料繪製圖表，供客戶確認，確保指標設計符合需求，減少後續調整時間。
+此外，我也利用測試資料建立符合FHIR標準的資料模板，讓負責合成資料的同仁可依此轉換資料。
+我們透過緊密合作與事前規劃，提升執行效率，確保專案按時交付。</p>
+</blockquote>
+
+<h4 id="1指標設計">1.指標設計</h4>
+<p>領域專家參考國內外論文，並根據美國醫學研究院提出的<strong><mark style="background-color: #ffff77; color: black;">六大醫療品質核心構面</mark></strong>，
+進行指標評估與設計，釐清計算所需的資料欄位，並建立概念性定義。
+該階段定義出本專案使用的品質指標，包含存活出院比率、出院時意識清楚比率等。</p>
+
+<p><img src="/assets/images/fhir_core.jpg" alt="Jekyll Logo" /></p>
+
+<h4 id="2資料合成">2.資料合成</h4>
+<p>基於品質指標所需資料欄位，<strong><mark style="background-color: #ffff77; color: black;">與領域專家討論資料合成邏輯，使模擬資料貼近實際情況。</mark></strong></p>
+<ul>
+  <li>資料合成比例：病患性別比例；出院動向比例；大腦表現功能分類比例等。</li>
+  <li>欄位間關係：身分證第一碼數字與性別相關；急診轉歸為死亡的病患，出院動向也會是死亡等。</li>
+</ul>
+
+<h4 id="3fhir資料標準">3.FHIR資料標準</h4>
+<p>將合成資料欄位對應至FHIR資源類型，轉換為JSON格式，
+並利用HL7提供的驗證器進行驗證，確保資料檔案<strong><mark style="background-color: #ffff77; color: black;">符合 FHIR 規範</mark></strong>。</p>
+<ul>
+  <li>FHIR階層對照：以CPR處置為例，原始資料欄位「CPR」，對應至FHIR資源類型 Procedure，需填入規範的值集。</li>
+</ul>
+
+<p><img src="/assets/images/fhir_mapping.jpg" alt="Jekyll Logo" /></p>
+
+<ul>
+  <li>檔案完整階層：使用資料交換基本單位「Bundle」，打包每筆病患就醫歷程所涉及之資源類型，產出JSON檔案。</li>
+</ul>
+
+<p><img src="/assets/images/fhir_bundle.jpg" alt="Jekyll Logo" /></p>
+
+<p><img src="/assets/images/fhir_json.jpg" alt="Jekyll Logo" /></p>
+
+<ul>
+  <li>檔案驗證結果：使用命令提示字元驗證JSON檔案，若驗證通過，可看到「Information: All OK」。</li>
+</ul>
+
+<p><img src="/assets/images/fhir_validation.jpg" alt="Jekyll Logo" /></p>
+
+<h4 id="4儀表板建置">4.儀表板建置</h4>
+<p>使用<strong><mark style="background-color: #ffff77; color: black;">Grafana</mark></strong>進行開發，包含兩種分析構面：</p>
+<ul>
+  <li>品質指標：瞭解品質指標每月趨勢變化，並可篩選不同病患屬性，進行比較。</li>
+  <li>統計資訊：病患性別比例、年齡級距比例、離院狀況比例、各項處置比例等。</li>
+</ul>
+
+<p><img src="/assets/images/fhir_dashboard.jpg" alt="Jekyll Logo" /></p>
+
+<h2 id="專案成就與自我成長"><strong>專案成就與自我成長</strong></h2>
+<blockquote>
+  <p>在此專案中，我對<strong><mark style="background-color: #ffff77; color: black;">FHIR與TW Core IG規範</mark></strong>有了進一步的認識，
+與領域專家及技術團隊緊密合作，
+<strong><mark style="background-color: #ffff77; color: black;">將醫療品質指標的概念性定義，轉化為結構化可交換的資料格式</mark></strong>，
+並運用驗證工具確保資料合規。此外，團隊之間保持緊密溝通，
+靈活調整專案執行方式與順序，這也是專案能夠如期交付的關鍵。</p>
+</blockquote>
+
+
+  </div><a class="u-url" href="/_posts/2025-02-28-data-standard-fhir.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">首頁</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">首頁</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/hhhsiaooo"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">hhhsiaooo</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>© 2025 個人專案經歷, All rights reserved.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

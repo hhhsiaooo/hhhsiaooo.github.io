@@ -1,13 +1,489 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://hhhsiaooo.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://hhhsiaooo.github.io/" rel="alternate" type="text/html" /><updated>2025-02-20T14:39:22+08:00</updated><id>http://hhhsiaooo.github.io/feed.xml</id><title type="html">title</title><subtitle>description.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://hhhsiaooo.github.io/jekyll/update/2025/02/20/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2025-02-20T14:00:04+08:00</published><updated>2025-02-20T14:00:04+08:00</updated><id>http://hhhsiaooo.github.io/jekyll/update/2025/02/20/welcome-to-jekyll</id><content type="html" xml:base="http://hhhsiaooo.github.io/jekyll/update/2025/02/20/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://hhhsiaooo.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://hhhsiaooo.github.io/" rel="alternate" type="text/html" /><updated>2025-03-27T13:30:03+08:00</updated><id>http://hhhsiaooo.github.io/feed.xml</id><title type="html">首頁</title><subtitle>© 2025 個人專案經歷, All rights reserved.</subtitle><entry><title type="html">【個人專案】銷售分析儀表板</title><link href="http://hhhsiaooo.github.io/jekyll/update/2025/03/25/sales-analysis-dashboard.html" rel="alternate" type="text/html" title="【個人專案】銷售分析儀表板" /><published>2025-03-25T00:00:00+08:00</published><updated>2025-03-25T00:00:00+08:00</updated><id>http://hhhsiaooo.github.io/jekyll/update/2025/03/25/sales-analysis-dashboard</id><content type="html" xml:base="http://hhhsiaooo.github.io/jekyll/update/2025/03/25/sales-analysis-dashboard.html"><![CDATA[<h2 id="專案簡介"><strong>專案簡介</strong></h2>
+<blockquote>
+  <p>專案程式碼請看 <a href="https://github.com/hhhsiaooo/sales-dashboard-grafana">GitHub</a>。</p>
+</blockquote>
 
-<p>To add new posts, simply add a file in the <code class="language-plaintext highlighter-rouge">_posts</code> directory that follows the convention <code class="language-plaintext highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+<p>本專案使用銷售資料產生器建置的電商平台資料庫，實作銷售分析儀表板，
+使用開源視覺化工具 Grafana 介接資料庫 PostgreSQL，
+透過 SQL Query 查詢並計算多維度的銷售分析指標，以瞭解長短期銷售趨勢與客戶行為模式。</p>
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+<h2 id="核心技術"><strong>核心技術</strong></h2>
+<h4 id="資料庫查詢"><strong>資料庫查詢</strong></h4>
+<ul>
+  <li>使用 <a href="https://www.postgresql.org/">PostgreSQL</a> 資料庫。</li>
+  <li>建立儀表板專用的資料庫使用者，設定唯讀權限，<strong><mark style="background-color: #ffff77; color: black;">提升資料庫操作安全性。</mark></strong></li>
+  <li><strong><mark style="background-color: #ffff77; color: black;">透過SQL Query查詢資料表並計算指標。</mark></strong></li>
+</ul>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+<h4 id="資料視覺化"><strong>資料視覺化</strong></h4>
+<ul>
+  <li>使用開源軟體 <a href="https://grafana.com/oss/">Grafana</a>。</li>
+  <li>資料庫介接與圖表製作。</li>
+  <li>儀表板使用者權限管理。</li>
+</ul>
 
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry></feed>
+<h2 id="指標規劃"><strong>指標規劃</strong></h2>
+<h4 id="不分時間整體會員樣態"><strong>不分時間整體會員樣態</strong></h4>
+<p>不分時間的會員與商品統計資訊。<strong><mark style="background-color: #ffff77; color: black;">瞭解忠實客戶樣態與主力商品。</mark></strong></p>
+<ul>
+  <li>註冊會員數</li>
+  <li>曾購買會員數</li>
+  <li>新註冊會員數月趨勢</li>
+  <li>購買會員數月趨勢</li>
+  <li>會員性別比例</li>
+  <li>會員年齡比例</li>
+  <li>通路轉換比例</li>
+  <li>各類商品購買次數比例</li>
+  <li>各類商品購買金額比例</li>
+</ul>
+
+<h4 id="年度比較"><strong>年度比較</strong></h4>
+<p>比較今年與去年的訂單量與客單價，呈現各類型商品的銷售佔比。
+<strong><mark style="background-color: #ffff77; color: black;">以評估今年的銷售表現，並發現市場需求的變化</mark></strong>
+，例如特定產品是否比去年更受歡迎。</p>
+<ul>
+  <li>今年訂單量</li>
+  <li>去年訂單量</li>
+  <li>訂單量月趨勢</li>
+  <li>今年客單價</li>
+  <li>去年客單價</li>
+  <li>客單價月趨勢</li>
+  <li>各通路轉換次數</li>
+  <li>各類商品購買次數</li>
+  <li>各類商品購買金額</li>
+</ul>
+
+<h4 id="短期比較"><strong>短期比較</strong></h4>
+<p>比較本周與上周的商品銷售情形，並呈現本周購買會員樣態與轉換率，
+同時可以<strong><mark style="background-color: #ffff77; color: black;">透過篩選器查看不同性別、年齡級距會員的購買情形，評估促銷活動對各類型商品的業績影響。</mark></strong></p>
+<ul>
+  <li>本周訂單數</li>
+  <li>購買會員性別年齡</li>
+  <li>會員購物歷程（轉換率）</li>
+  <li>各類商品購買情形</li>
+  <li>本周促銷活動</li>
+  <li>前周促銷活動</li>
+</ul>
+
+<h2 id="圖表設計"><strong>圖表設計</strong></h2>
+<p>根據各項指標要傳達的資訊，選擇合適且直觀的圖表類型。</p>
+
+<p>以指標「客單價」為例，除呈現今年與去年的數字差異，結合趨勢圖找出造成差異的月份。
+<img src="/assets/images/dashboard_value.jpg" alt="Jekyll Logo" /></p>
+
+<p>以指標「會員購物歷程」為例，使用funnel圖表，呈現不同階段流失的人數比例，以及最終購買的比例。
+<img src="/assets/images/dashboard_funnel.jpg" alt="Jekyll Logo" /></p>
+
+<h2 id="儀表板製作"><strong>儀表板製作</strong></h2>
+<ul>
+  <li>使用 APT 安裝儀表板工具 Grafana。</li>
+  <li>建立 Grafana 專用的資料庫唯讀使用者，以及儀表板的管理者與檢視者。</li>
+  <li>SQL Query 撈取資料，進行指標計算。</li>
+  <li>設定圖表的資料欄位與樣式，例如：圖表類型、XY軸欄位、圖表顏色、字體大小等。</li>
+  <li><strong><mark style="background-color: #ffff77; color: black;">匯出儀表板設定檔，未來可透過此設定檔在其他主機復現儀表板的圖表設定。</mark></strong></li>
+</ul>
+
+<h2 id="資料分析洞察"><strong>資料分析洞察</strong></h2>
+<p>專案使用銷售資料產生器建置的資料庫，雖然無法完全模擬真實的銷售狀況，但仍可
+<strong><mark style="background-color: #ffff77; color: black;">針對隨機生成的資料樣態進行分析，示範儀表板的設計理念與資料解讀方式。</mark></strong></p>
+
+<p><strong>「整體會員樣態」頁面</strong>
+<img src="/assets/images/dashboard_page1.jpg" alt="Jekyll Logo" /></p>
+<ul>
+  <li>雖會員人數達4000多人，但仍有很多會員從未購買過商品。</li>
+  <li>每月新註冊的會員人數相近。</li>
+  <li>每月購買商品的會員人數相近。</li>
+  <li>會員男女比例大致相同，以年齡60歲以上佔多數。</li>
+  <li>寵物零食被購買最多次，但因單價低，購買金額佔比不高。</li>
+  <li>寵物保健食品非購買次數最高，但因單價高，購買金額占比亦高。</li>
+  <li>狗飼料為必需品，購買次數與金額較高。</li>
+</ul>
+
+<p><strong>「年度比較」頁面</strong>
+<img src="/assets/images/dashboard_page2.jpg" alt="Jekyll Logo" /></p>
+<ul>
+  <li>去年訂單量可作為本年訂單量的目標值，截至三月底尚未達到去年業績的四分之一，如非受到銷售淡旺季的影響，應檢討年初促銷活動與銷售狀況。</li>
+  <li>今年平均客單價略低於去年，透過趨勢圖可以看到1-2月客單價較低。</li>
+  <li>去年各通路轉換次數相當，今年在收尋引擎與電子郵件廣告的成效略好。</li>
+  <li>比較今年與去年，各類商品購買次數相當，但金額佔比略有差異。</li>
+  <li>寵物保健食品金額佔比降低，顧客單次購買的數量可能降低，或偏好購買較低價的品牌。</li>
+  <li>狗罐頭金額佔比提高，顧客單次購買的數量可能提高，或偏好購買較高價的品牌。</li>
+</ul>
+
+<p><strong>「短期比較」頁面</strong></p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[專案簡介 專案程式碼請看 GitHub。]]></summary></entry><entry><title type="html">【個人專案】銷售資料產生器</title><link href="http://hhhsiaooo.github.io/jekyll/update/2025/03/25/sales-data-generator.html" rel="alternate" type="text/html" title="【個人專案】銷售資料產生器" /><published>2025-03-25T00:00:00+08:00</published><updated>2025-03-25T00:00:00+08:00</updated><id>http://hhhsiaooo.github.io/jekyll/update/2025/03/25/sales-data-generator</id><content type="html" xml:base="http://hhhsiaooo.github.io/jekyll/update/2025/03/25/sales-data-generator.html"><![CDATA[<h2 id="專案簡介"><strong>專案簡介</strong></h2>
+<blockquote>
+  <p>專案程式碼請看 <a href="https://github.com/hhhsiaooo/company-operations-data-gen">GitHub</a>。</p>
+</blockquote>
+
+<p>顧客行為資料和銷售記錄對於市場分析與促銷策略研擬至關重要，但受限於隱私問題無法取得真實資料，為模擬真實電商平台運作，
+本專案以作者感興趣的寵物用品作為示範，
+<strong><mark style="background-color: #ffff77; color: black;">使用 Python 生成有邏輯性且自動更新的交易資料，建立電商銷售資料庫，作為未來分析應用的資料來源。</mark></strong></p>
+
+<h2 id="核心技術"><strong>核心技術</strong></h2>
+<h4 id="爬蟲"><strong>爬蟲</strong></h4>
+<ul>
+  <li>使用<strong><mark style="background-color: #ffff77; color: black;">requests + BeautifulSoup</mark></strong>，從 <a href="https://www.momoshop.com.tw/main/Main.jsp">MOMO購物網</a> 取得寵物相關商品資訊。</li>
+  <li>清理資料以取得商品名稱、品牌與價格等資訊。</li>
+</ul>
+
+<h4 id="資料驗證"><strong>資料驗證</strong></h4>
+<ul>
+  <li>使用<strong><mark style="background-color: #ffff77; color: black;">Pydantic</mark></strong>進行資料驗證，確保爬取與生成的資料格式符合資料表規範。</li>
+</ul>
+
+<h4 id="資料庫操作"><strong>資料庫操作</strong></h4>
+<ul>
+  <li><strong><mark style="background-color: #ffff77; color: black;">PostgreSQL</mark></strong>資料庫安裝與設定。</li>
+  <li>設計並建立資料表。</li>
+  <li>使用<strong><mark style="background-color: #ffff77; color: black;">SQLAlchemy ORM</mark></strong>操作資料庫，避免 SQL Injection 攻擊，解決不同資料庫間 SQL 語法差異的問題。</li>
+</ul>
+
+<h4 id="自動化測試"><strong>自動化測試</strong></h4>
+<ul>
+  <li>使用<strong><mark style="background-color: #ffff77; color: black;">pytest</mark></strong>進行自動化測試並計算覆蓋率。</li>
+</ul>
+
+<h4 id="系統服務管理"><strong>系統服務管理</strong></h4>
+<ul>
+  <li>使用 Linux 系統服務管理工具<strong><mark style="background-color: #ffff77; color: black;">systemd</mark></strong>，定期執行資料產生器，以更新銷售資料庫。</li>
+</ul>
+
+<h4 id="環境管理"><strong>環境管理</strong></h4>
+<ul>
+  <li>使用<strong><mark style="background-color: #ffff77; color: black;">Poetry</mark></strong>建立虛擬環境，進行套件管理，並將程式碼打包成可執行的指令。</li>
+  <li>在<strong><mark style="background-color: #ffff77; color: black;">Linux環境部署</mark></strong>系統服務。</li>
+</ul>
+
+<h2 id="資料設計"><strong>資料設計</strong></h2>
+<h4 id="顧客資料表"><strong>顧客資料表</strong></h4>
+<ul>
+  <li>使用 Python 套件 <a href="https://faker.readthedocs.io/en/master">Faker</a> 生成顧客資料。</li>
+  <li>顧客資料包含姓名、性別、生日、聯絡資訊、居住地等資訊。</li>
+  <li><strong><mark style="background-color: #ffff77; color: black;">設定排程每日06:00生成隨機筆數的顧客資料，模擬前一天新會員註冊之情境。</mark></strong></li>
+</ul>
+
+<h4 id="商品資料表"><strong>商品資料表</strong></h4>
+<ul>
+  <li>爬取購物網站的寵物用品資訊。</li>
+  <li>商品資料包含商品名稱、品牌、價格、資料更新時間等資訊。</li>
+  <li><strong><mark style="background-color: #ffff77; color: black;">設定排程每週一04:00爬取最新商品資訊與價格。</mark></strong></li>
+</ul>
+
+<h4 id="促銷檔期表"><strong>促銷檔期表</strong></h4>
+<ul>
+  <li>促銷活動類型包含：滿額折扣、多件優惠、免運滿額贈。</li>
+  <li><strong><mark style="background-color: #ffff77; color: black;">根據消費者心理與平假日的購買行為差異，指定一週七天適用的促銷活動類型，並設定各類型商品的購買機率、購買數量、每日交易數量。</mark></strong>
+    <ul>
+      <li>週二至週四為工作日，購買低峰，推出多件優惠引導消費者囤貨，單一商品購買數量較高，且偏好購買必需品或消耗品，例如：飼料、罐頭及尿布墊。</li>
+      <li>週六與週日為假日，消費者出門遊玩逛街較少線上購物，推出滿額贈及免運活動，減少購買猶豫時間，單一商品購買數量較低，但交易筆數較高，消費者偏好購買非必需品或低價商品，例如：零食及潔牙骨。</li>
+      <li>憂鬱週一購物紓解壓力，快樂週五迎接假日犒賞自己，購買高峰，推出滿額折扣，用高額折扣刺激購物，消費者偏好購買單價較高的商品，以達折扣門檻，例如：保健食品及凍乾零食。</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="促銷活動表"><strong>促銷活動表</strong></h4>
+<ul>
+  <li><strong><mark style="background-color: #ffff77; color: black;">基於三種促銷活動類型（滿額折扣、多件優惠、免運滿額贈），設定活動內容、折扣門檻與贈品。</mark></strong></li>
+  <li>促銷活動包含活動名稱、活動類型、折扣門檻值、折扣比率、贈品等資訊。</li>
+</ul>
+
+<h4 id="顧客行為資料表"><strong>顧客行為資料表</strong></h4>
+<ul>
+  <li><strong><mark style="background-color: #ffff77; color: black;">設定排程每日06:00隨機選取資料庫中的顧客資料與產品資料，產生顧客行為資料。</mark></strong></li>
+  <li>顧客行為包含瀏覽商品、加入購物車及購買商品。</li>
+  <li>確保顧客行為發生時間，<strong><mark style="background-color: #ffff77; color: black;">遵守瀏覽商品-&gt;加入購物車-&gt;購買商品的順序。</mark></strong></li>
+</ul>
+
+<h4 id="交易資料表"><strong>交易資料表</strong></h4>
+<ul>
+  <li>儲存顧客行為資料中的購買資料。</li>
+  <li><strong><mark style="background-color: #ffff77; color: black;">選擇當天適用的折扣活動，並計算折扣後的結帳金額。</mark></strong></li>
+</ul>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[專案簡介 專案程式碼請看 GitHub。]]></summary></entry><entry><title type="html">【公司專案】醫院評鑑分析儀表板</title><link href="http://hhhsiaooo.github.io/jekyll/update/2025/02/28/data-standard-fhir.html" rel="alternate" type="text/html" title="【公司專案】醫院評鑑分析儀表板" /><published>2025-02-28T00:00:00+08:00</published><updated>2025-02-28T00:00:00+08:00</updated><id>http://hhhsiaooo.github.io/jekyll/update/2025/02/28/data-standard-fhir</id><content type="html" xml:base="http://hhhsiaooo.github.io/jekyll/update/2025/02/28/data-standard-fhir.html"><![CDATA[<h2 id="專案背景"><strong>專案背景</strong></h2>
+<p>目前台灣醫院各自開發自有的醫療資訊系統，醫院評鑑中的醫療品質指標資料未進行標準化，
+無法滿足智慧醫療發展的需求。</p>
+
+<p>為解決此問題，本專案協助盤點醫療品質指標相關資料，
+基於<strong><mark style="background-color: #ffff77; color: black;">FHIR（Fast Healthcare Interoperability Resources）及 TW Core IG</mark></strong>進行規範，
+並透過示範儀表板，驗證標準化資料的應用可行性。</p>
+
+<h2 id="實作流程"><strong>實作流程</strong></h2>
+<blockquote>
+  <p>此為團隊合作專案，我負責的項目為<strong><mark style="background-color: #ffff77; color: black;">「FHIR資料標準」</mark></strong>
+與<strong><mark style="background-color: #ffff77; color: black;">「儀表板建置」</mark></strong>。
+因專案時程有限，在團隊成員研究資料分布、尚未產出合成資料前，
+我先使用測試資料繪製圖表，供客戶確認，確保指標設計符合需求，減少後續調整時間。
+此外，我也利用測試資料建立符合FHIR標準的資料模板，讓負責合成資料的同仁可依此轉換資料。
+我們透過緊密合作與事前規劃，提升執行效率，確保專案按時交付。</p>
+</blockquote>
+
+<h4 id="1指標設計">1.指標設計</h4>
+<p>領域專家參考國內外論文，並根據美國醫學研究院提出的<strong><mark style="background-color: #ffff77; color: black;">六大醫療品質核心構面</mark></strong>，
+進行指標評估與設計，釐清計算所需的資料欄位，並建立概念性定義。
+該階段定義出本專案使用的品質指標，包含存活出院比率、出院時意識清楚比率等。</p>
+
+<p><img src="/assets/images/fhir_core.jpg" alt="Jekyll Logo" /></p>
+
+<h4 id="2資料合成">2.資料合成</h4>
+<p>基於品質指標所需資料欄位，<strong><mark style="background-color: #ffff77; color: black;">與領域專家討論資料合成邏輯，使模擬資料貼近實際情況。</mark></strong></p>
+<ul>
+  <li>資料合成比例：病患性別比例；出院動向比例；大腦表現功能分類比例等。</li>
+  <li>欄位間關係：身分證第一碼數字與性別相關；急診轉歸為死亡的病患，出院動向也會是死亡等。</li>
+</ul>
+
+<h4 id="3fhir資料標準">3.FHIR資料標準</h4>
+<p>將合成資料欄位對應至FHIR資源類型，轉換為JSON格式，
+並利用HL7提供的驗證器進行驗證，確保資料檔案<strong><mark style="background-color: #ffff77; color: black;">符合 FHIR 規範</mark></strong>。</p>
+<ul>
+  <li>FHIR階層對照：以CPR處置為例，原始資料欄位「CPR」，對應至FHIR資源類型 Procedure，需填入規範的值集。</li>
+</ul>
+
+<p><img src="/assets/images/fhir_mapping.jpg" alt="Jekyll Logo" /></p>
+
+<ul>
+  <li>檔案完整階層：使用資料交換基本單位「Bundle」，打包每筆病患就醫歷程所涉及之資源類型，產出JSON檔案。</li>
+</ul>
+
+<p><img src="/assets/images/fhir_bundle.jpg" alt="Jekyll Logo" /></p>
+
+<p><img src="/assets/images/fhir_json.jpg" alt="Jekyll Logo" /></p>
+
+<ul>
+  <li>檔案驗證結果：使用命令提示字元驗證JSON檔案，若驗證通過，可看到「Information: All OK」。</li>
+</ul>
+
+<p><img src="/assets/images/fhir_validation.jpg" alt="Jekyll Logo" /></p>
+
+<h4 id="4儀表板建置">4.儀表板建置</h4>
+<p>使用<strong><mark style="background-color: #ffff77; color: black;">Grafana</mark></strong>進行開發，包含兩種分析構面：</p>
+<ul>
+  <li>品質指標：瞭解品質指標每月趨勢變化，並可篩選不同病患屬性，進行比較。</li>
+  <li>統計資訊：病患性別比例、年齡級距比例、離院狀況比例、各項處置比例等。</li>
+</ul>
+
+<p><img src="/assets/images/fhir_dashboard.jpg" alt="Jekyll Logo" /></p>
+
+<h2 id="專案成就與自我成長"><strong>專案成就與自我成長</strong></h2>
+<blockquote>
+  <p>在此專案中，我對<strong><mark style="background-color: #ffff77; color: black;">FHIR與TW Core IG規範</mark></strong>有了進一步的認識，
+與領域專家及技術團隊緊密合作，
+<strong><mark style="background-color: #ffff77; color: black;">將醫療品質指標的概念性定義，轉化為結構化可交換的資料格式</mark></strong>，
+並運用驗證工具確保資料合規。此外，團隊之間保持緊密溝通，
+靈活調整專案執行方式與順序，這也是專案能夠如期交付的關鍵。</p>
+</blockquote>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[專案背景 目前台灣醫院各自開發自有的醫療資訊系統，醫院評鑑中的醫療品質指標資料未進行標準化， 無法滿足智慧醫療發展的需求。]]></summary></entry><entry><title type="html">【公司專案】採購資料開放應用分析</title><link href="http://hhhsiaooo.github.io/jekyll/update/2025/02/28/data-standard-ocds.html" rel="alternate" type="text/html" title="【公司專案】採購資料開放應用分析" /><published>2025-02-28T00:00:00+08:00</published><updated>2025-02-28T00:00:00+08:00</updated><id>http://hhhsiaooo.github.io/jekyll/update/2025/02/28/data-standard-ocds</id><content type="html" xml:base="http://hhhsiaooo.github.io/jekyll/update/2025/02/28/data-standard-ocds.html"><![CDATA[<h2 id="專案背景"><strong>專案背景</strong></h2>
+<p><strong><mark style="background-color: #ffff77; color: black;">為推動採購資料的開放與應用</mark></strong>，並與國際標準接軌，
+專案參考 Open Contracting Partnership 所訂定之<strong><mark style="background-color: #ffff77; color: black;">Open Contracting Data Standard（OCDS）</mark></strong>，
+將電子採購網資料進行轉換，使其符合國際開放採購資料標準，促進公開透明與跨國合作。
+未來可提供更具結構化、標準化的採購資訊，讓個人、學術機構、民間團體及企業等使用者更容易存取與分析資料，
+透過專案產出的採購管理儀表板，展現了資料應用的可能性。</p>
+
+<h2 id="實作流程"><strong>實作流程</strong></h2>
+<blockquote>
+  <p>我擔任<strong><mark style="background-color: #ffff77; color: black;">專案經理</mark></strong>，負責客戶溝通、進度掌控及資料分析實作。</p>
+</blockquote>
+
+<h4 id="1管理指標設計">1.管理指標設計</h4>
+<p>參考<strong><mark style="background-color: #ffff77; color: black;">Open Contracting Partnership 所建議之風險管理指標</mark></strong>，
+與客戶討論並根據國內法律規定進行調整，訂出合適的管理指標清單與衡量標準。</p>
+
+<h4 id="2資料蒐集">2.資料蒐集</h4>
+<p>盤點管理指標清單所需資料欄位，使用<strong><mark style="background-color: #ffff77; color: black;">「中華民國政府電子採購網」</mark></strong>
+之招標公告與決標公告，取得標案相關資訊。
+例如：標的分類、招標方式、決標方式、決標金額、招標日期等資訊。</p>
+
+<h4 id="3資料轉換">3.資料轉換</h4>
+<p>使用 Open Contracting Partnership 提供之資料轉換程式，將電子採購網資料對應至 OCDS 規範的資料階層，
+並使用官方工具驗證檔案符合 OCDS 資料標準，產出資料交換格式 JSON 檔案。</p>
+<ul>
+  <li>資料階層對照：將電子採購網的資料欄位，對應Open Contracting Data Standard（OCDS）資料階層。</li>
+</ul>
+
+<p><img src="/assets/images/ocds_mapping.jpg" alt="Jekyll Logo" /></p>
+
+<ul>
+  <li>OCDS轉換程式：填寫 Open Contracting Partnership 提供的資料轉換工作表。</li>
+</ul>
+
+<p><img src="/assets/images/ocds_transformation.jpg" alt="Jekyll Logo" /></p>
+
+<ul>
+  <li>資料驗證：將資料轉換工作表上傳至官方驗證工具 Data Review Tool。</li>
+</ul>
+
+<p><img src="/assets/images/ocds_validation.jpg" alt="Jekyll Logo" /></p>
+
+<ul>
+  <li>產製JSON檔案與說明文件。</li>
+</ul>
+
+<p><img src="/assets/images/ocds_json.jpg" alt="Jekyll Logo" /></p>
+
+<h4 id="4儀表板建置">4.儀表板建置</h4>
+<p>使用 <strong><mark style="background-color: #ffff77; color: black;">Google Looker Studio</mark></strong> 進行開發，包含兩種指標構面：</p>
+<ul>
+  <li>採購案件現況：標案類型佔比、決標金額佔比、標案地區分布等統計資訊。</li>
+  <li>招標與決標階段的管理指標：投標廠商家數、等標期分布等指標。</li>
+</ul>
+
+<p>儀表板圖表示意圖</p>
+
+<p><img src="/assets/images/ocds_chart1.jpg" alt="Jekyll Logo" /></p>
+
+<p><img src="/assets/images/ocds_chart2.jpg" alt="Jekyll Logo" /></p>
+
+<p><img src="/assets/images/ocds_chart3.jpg" alt="Jekyll Logo" /></p>
+
+<h2 id="專案成就與自我成長"><strong>專案成就與自我成長</strong></h2>
+<blockquote>
+  <p>原先的圖表設計專注於管理指標，但在儀表板初稿完成後，客戶才定義了儀表板的主要目標對象，
+要求將重點放在採購案件現況的呈現，並強調簡單清晰的統計圖表，而不是複雜的風險管理指標。
+這讓我意識到專案初期<strong><mark style="background-color: #ffff77; color: black;">設定目標對象</mark></strong>的重要性，
+同時也需要與客戶保持密切聯繫，<strong><mark style="background-color: #ffff77; color: black;">採用敏捷式專案管理，提供最小可見的專案成果</mark></strong>，
+確保後續實作方向與客戶需求一致。</p>
+
+  <p>此外，這次專案讓我參與了<strong><mark style="background-color: #ffff77; color: black;">資料標準化的全流程實作</mark></strong>，
+包含原始資料盤點、格式規範研究、資料轉換與驗證，學習識別指標所需資料欄位，
+根據國際規範進行資料轉換，並使用專業工具進行自動化處理與驗證。
+這些經驗不僅提升了我的資料處理能力，也確保了資料的準確性與合規性。</p>
+</blockquote>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[專案背景 為推動採購資料的開放與應用，並與國際標準接軌， 專案參考 Open Contracting Partnership 所訂定之Open Contracting Data Standard（OCDS）， 將電子採購網資料進行轉換，使其符合國際開放採購資料標準，促進公開透明與跨國合作。 未來可提供更具結構化、標準化的採購資訊，讓個人、學術機構、民間團體及企業等使用者更容易存取與分析資料， 透過專案產出的採購管理儀表板，展現了資料應用的可能性。]]></summary></entry><entry><title type="html">【公司專案】資料思考工作坊</title><link href="http://hhhsiaooo.github.io/jekyll/update/2025/02/28/data-thinking-workshop.html" rel="alternate" type="text/html" title="【公司專案】資料思考工作坊" /><published>2025-02-28T00:00:00+08:00</published><updated>2025-02-28T00:00:00+08:00</updated><id>http://hhhsiaooo.github.io/jekyll/update/2025/02/28/data-thinking-workshop</id><content type="html" xml:base="http://hhhsiaooo.github.io/jekyll/update/2025/02/28/data-thinking-workshop.html"><![CDATA[<h2 id="專案背景"><strong>專案背景</strong></h2>
+<p>傳統解決業務痛點的方式主要依賴<strong><mark style="background-color: #ffff77; color: black;">經驗導向</mark></strong>與<strong><mark style="background-color: #ffff77; color: black;">線性思考</mark></strong> ，
+由主管或資深同仁根據過往經驗判斷問題的根源，並透過內部會議規劃解決方案，
+該方式受到經驗與認知的限制，侷限於部門視角，缺少跨領域的整合，容易忽略實際使用者需求，
+且缺乏資料佐證與概念性測試，需要不斷進行試錯與調整。
+因此該專案的目標，就是<strong><mark style="background-color: #ffff77; color: black;">結合設計思考與資料思考</mark></strong>，
+突破傳統方法的限制，透過<strong><mark style="background-color: #ffff77; color: black;">以人為本的發散式探索與數據驅動決策</mark></strong>，提供更高效的解決方案。</p>
+
+<p><strong><mark style="background-color: #ffff77; color: black;">曾協助三位客戶舉辦資料思考工作坊</mark></strong>，
+透過專家引導參與人員，進行先發散再收斂的思考練習，針對其業務痛點提案，深入解析服務、流程與資料的細節狀況，
+並協同資料分析師，將業務問題轉換為資料科學問題，
+<strong><mark style="background-color: #ffff77; color: black;">同時規劃概念性測試的分析應用架構</mark></strong>，
+於課程中實際操作資料，產出分析結果，透過資料驗證後的解決方案，提升決策品質。</p>
+
+<p><img src="/assets/images/workshop_datathinking.jpg" alt="Jekyll Logo" /></p>
+
+<h2 id="實作流程"><strong>實作流程</strong></h2>
+<blockquote>
+  <p>此為團隊合作專案，我擔任<strong><mark style="background-color: #ffff77; color: black;">工作坊助教</mark></strong>，
+製作簡報並上台講解資料分析的類型與工作流程。
+此外，我也參與各組討論，協助釐清分析需求，規劃資料分析架構。</p>
+</blockquote>
+
+<h4 id="1前期籌備">1.前期籌備</h4>
+<p>請參與人員根據議題進行分組，<strong><mark style="background-color: #ffff77; color: black;">填寫痛點分析表</mark></strong>，
+說明要解決的<strong><mark style="background-color: #ffff77; color: black;">業務問題、資料現況、工作方法與預期產出成果</mark></strong>。
+透過專家諮詢瞭解業務問題與資料現況，並給予提案調整建議，以協助各組在工作坊討論時更加聚焦，提升實作的可行性。</p>
+
+<h4 id="2資料科學簡介">2.資料科學簡介</h4>
+<p><strong><mark style="background-color: #ffff77; color: black;">說明資料分析類型與工作流程</mark></strong>，
+讓參與人員更瞭解接下來的分組實作流程，順利發想業務問題對應的資料分析方法。</p>
+
+<p><img src="/assets/images/workshop_workflow.jpg" alt="Jekyll Logo" /></p>
+
+<ul>
+  <li>描述性分析：釐清業務問題，描述過去或當前的狀況，主要利用統計量、關鍵指標設計與視覺化圖表進行呈現。例如：平台過去一個月的銷售額、交通事故熱區分布。</li>
+  <li>診斷性分析：分析資料以探究問題發生的原因，通常利用關聯分析、因果分析來達成。例如：產品銷售量下降是否受到競爭對手的低價替代品影響、交通事故增加的主因是超速行駛。</li>
+  <li>預測性分析：預測未來可能發生的事，主要利用機器學習模型進行預測。例如：根據顧客購買行為預測下個月的熱銷商品、預測容易發生交通事故的路段。</li>
+  <li>處方性分析：提供最佳解決方案，運用最佳化演算法或機器學習自動化決策。例如：透過銷售趨勢預測與客群分析，推薦合適的促銷方案；根據交通流量調整紅綠燈時間，減少交通壅塞狀況。</li>
+</ul>
+
+<h4 id="3工作坊實作">3.工作坊實作</h4>
+<p>講師基於設計思考的<strong><mark style="background-color: #ffff77; color: black;">Double Diamond 雙鑽石模型</mark></strong>，
+設計系列課程與討論內容，引導參與人員不斷進行擴散性思考與收斂性思考，
+強調先探索問題，再尋找解決方案，並規劃資料分析應用架構，實際產出分析結果。</p>
+
+<ul>
+  <li>問題釐清：釐清問題類型（包含<strong><mark style="background-color: #ffff77; color: black;">任務流程、管理制度、軟硬體因素</mark></strong>等），
+盤點對應的<strong><mark style="background-color: #ffff77; color: black;">利害關係人</mark></strong>，
+運用設計思考的同理心精神，確保問題定義能考量不同角色的需求。</li>
+  <li>問題類型：透過<strong><mark style="background-color: #ffff77; color: black;">四象限法</mark></strong>，釐清問題的困難度與價值性，
+<strong><mark style="background-color: #ffff77; color: black;">找出困難度低價值性高的問題</mark></strong>，列為優先解決目標。</li>
+  <li>專案流程：列出<strong><mark style="background-color: #ffff77; color: black;">問題相關的業務單位與作業流程</mark></strong>，
+盤點各單位面臨的痛點並掌握資料現況，以釐清問題全貌。</li>
+  <li>資料科學應用：進行痛點原因解析，並將議題轉化為可被資料分析解決的問題，規劃分析應用方案，
+列出對應的<strong><mark style="background-color: #ffff77; color: black;">量化指標與資料細項</mark></strong>。</li>
+  <li>預期效益風險評估：列出應用方案的<strong><mark style="background-color: #ffff77; color: black;">質化效益、量化效益與風險</mark></strong>，
+以判斷其價值性與可行性。</li>
+</ul>
+
+<p><img src="/assets/images/workshop_project.jpg" alt="Jekyll Logo" /></p>
+
+<h4 id="4分組報告">4.分組報告</h4>
+<p>各組分享工作坊最終成果，並由專業講師與其他團隊給予意見回饋與未來建議。</p>
+
+<p>以上述案例為例，針對<strong><mark style="background-color: #ffff77; color: black;">「客服電話諮詢量大且問題重複」</mark></strong>
+之議題，提出改善建議如下：</p>
+<ul>
+  <li>可延續本次產出的結構化常見問題與檔案格式，更新豐富資料內容。</li>
+  <li>留意ChatGPT API介接的<strong><mark style="background-color: #ffff77; color: black;">成本費用與資安議題</mark></strong>。</li>
+  <li>未來可彙集其他利害關係單位與資訊廠商，探討其他問題類型，<strong><mark style="background-color: #ffff77; color: black;">研擬資料收集架構</mark></strong>。</li>
+</ul>
+
+<h2 id="專案成就與自我成長"><strong>專案成就與自我成長</strong></h2>
+<blockquote>
+  <p>在工作坊的討論過程中，我們需要不斷拋出問題，引導客戶進行<strong><mark style="background-color: #ffff77; color: black;">發散與收斂</mark></strong>的思考練習。
+起初，我擔心自己會問出「笨問題」，但隨著與客戶的反覆問答，
+<strong><mark style="background-color: #ffff77; color: black;">業務思考與資料思考的碰撞激發了更多解決方案的可能性，讓我逐漸放下顧慮，更勇於提問。</mark></strong>
+同時，透過接觸不同產業的問題痛點，我對各種業務領域的理解也更加深入。</p>
+
+  <p>經過工作坊的概念性測試，其中一位客戶對於資料分析應用產生更多的想法，
+進而促成新的資料分析專案，這讓我們能夠進一步聚焦客戶需求，規劃更細緻的應用框架，推動數位轉型，實現數據驅動決策。</p>
+</blockquote>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[專案背景 傳統解決業務痛點的方式主要依賴經驗導向與線性思考 ， 由主管或資深同仁根據過往經驗判斷問題的根源，並透過內部會議規劃解決方案， 該方式受到經驗與認知的限制，侷限於部門視角，缺少跨領域的整合，容易忽略實際使用者需求， 且缺乏資料佐證與概念性測試，需要不斷進行試錯與調整。 因此該專案的目標，就是結合設計思考與資料思考， 突破傳統方法的限制，透過以人為本的發散式探索與數據驅動決策，提供更高效的解決方案。]]></summary></entry><entry><title type="html">【公司專案】學員培訓數據應用</title><link href="http://hhhsiaooo.github.io/jekyll/update/2025/02/28/training-data-dashboard.html" rel="alternate" type="text/html" title="【公司專案】學員培訓數據應用" /><published>2025-02-28T00:00:00+08:00</published><updated>2025-02-28T00:00:00+08:00</updated><id>http://hhhsiaooo.github.io/jekyll/update/2025/02/28/training-data-dashboard</id><content type="html" xml:base="http://hhhsiaooo.github.io/jekyll/update/2025/02/28/training-data-dashboard.html"><![CDATA[<h2 id="專案背景"><strong>專案背景</strong></h2>
+<p>終身學習與在職培訓是提升人力資本價值的關鍵，然而，許多培訓單位與教育平台仍依賴經驗法則、學員問卷回饋與月報表來評估課程成效與成本，
+導致<strong><mark style="background-color: #ffff77; color: black;">課程規劃與訓練資源分配缺乏數據支撐，學習成效難以量化評估</mark></strong>。
+此外，培訓單位也面臨<strong><mark style="background-color: #ffff77; color: black;">學員流向競爭對手課程的挑戰</mark></strong>，
+卻難以掌握背後原因，無法有效調整訓練方向。</p>
+
+<p>為了解決上述問題，透過需求訪談、資料整合及分析，
+協助培訓單位掌握學員學習行為、課程需求趨勢與培訓成果，
+進而優化課程規劃，提升培訓資源的運用效率。</p>
+
+<h2 id="實作流程"><strong>實作流程</strong></h2>
+<blockquote>
+  <p>此為團隊合作專案，我擔任<strong><mark style="background-color: #ffff77; color: black;">專案經理</mark></strong>，
+負責客戶溝通、進度掌控及主題實作。
+在「資料思考工作坊」階段，我擔任助教，協助講師引導參與人員討論；
+在「主題實作」階段的開發環境建置，則請工程師協助。</p>
+</blockquote>
+
+<h4 id="1主題構思與評估">1.主題構思與評估</h4>
+<p>課程管理與機構營運涉及許多業務單位，
+<strong><mark style="background-color: #ffff77; color: black;">透過一對一顧問諮詢，深入瞭解各組的業務問題、資料現況及預期成果</mark></strong>，
+並提供調整建議，提升實作的可行性。</p>
+
+<p>舉例來說，某組原計畫建立學習平台的網站流量預測模型，以動態調整網路頻寬費用。
+然而，現有網站流量資料無法即時更新且存在缺漏，加上頻寬調整受到網路公司每月限制，無法依據預測結果隨時調整。
+經討論後，團隊意識到網站流量在平日與假日已呈現明顯差異，因此可改採固定的平假日頻寬調整策略，
+並將此次<strong><mark style="background-color: #ffff77; color: black;">分析重點轉向學員學習行為，關注每門課程的閱讀人數與學習成效</mark></strong>。</p>
+
+<h4 id="2資料思考工作坊">2.資料思考工作坊</h4>
+<p>基於前階段的主題構思方向，工作坊旨在協助各組完善資料應用規劃。
+透過設計思考方法，引導各組
+<strong><mark style="background-color: #ffff77; color: black;">釐清業務痛點、量化指標、規劃分析架構</mark></strong>，為後續實作奠定基礎。</p>
+
+<p>由於主題實作僅限兩組，我們在討論時發現，
+其中三組皆關注課程需求下降的原因，只是著眼於不同課程類型。
+因此我們<strong><mark style="background-color: #ffff77; color: black;">整合分析需求</mark></strong>，
+依不同的構面展開分析，在有限名額內滿足各組目標。</p>
+
+<h4 id="3主題實作">3.主題實作</h4>
+<p>以<strong><mark style="background-color: #ffff77; color: black;">「學習平台管理儀表板」</mark></strong>的實作流程進行說明。</p>
+<ul>
+  <li>開發環境建置：採用遠端連線形式架設 Linux 系統，並部署資料庫 MariaDB 及儀表板工具 Grafana。</li>
+  <li>指標設計：即時閱讀狀況、課程年度成效及活躍學員樣態。</li>
+  <li>資料盤點：各類課程閱讀人數、課程資料表、學員資料表等。</li>
+  <li>儀表板建置：使用 Grafana 介接資料庫，進行指標計算及圖表繪製。</li>
+</ul>
+
+<p>專案原本設定以一次性資料進行概念性驗證，但是部分分析需要持續更新資料才能顯示趨勢。
+為了平衡公司人力成本與客戶需求，我們協調客戶提供<strong><mark style="background-color: #ffff77; color: black;">資料檢視（View）</mark></strong>，
+並使用 Grafana 的<strong><mark style="background-color: #ffff77; color: black;">SQL Query進行指標計算，實現資料自動更新的儀表板。</mark></strong></p>
+
+<h2 id="專案成就與自我成長"><strong>專案成就與自我成長</strong></h2>
+<blockquote>
+  <p>在這次專案中，與客戶的密切溝通讓我提升了設計思考方法與資料應用規劃的能力，
+我學會了如何<strong><mark style="background-color: #ffff77; color: black;">將複雜的業務需求轉化為具體的資料分析目標</mark></strong>，
+並在有限時間內協調各方需求達成共識。</p>
+
+  <p>此外，我也理解到初期的專案範圍設定，往往會受到客戶預算限制的影響，無法滿足實際的需求，
+特別是當某些分析需要持續更新資料才能顯示有效的趨勢。因此，未來在規劃專案時，
+應更謹慎<strong><mark style="background-color: #ffff77; color: black;">平衡公司人力成本與客戶預算</mark></strong>，以確保能滿足實際需求。</p>
+</blockquote>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[專案背景 終身學習與在職培訓是提升人力資本價值的關鍵，然而，許多培訓單位與教育平台仍依賴經驗法則、學員問卷回饋與月報表來評估課程成效與成本， 導致課程規劃與訓練資源分配缺乏數據支撐，學習成效難以量化評估。 此外，培訓單位也面臨學員流向競爭對手課程的挑戰， 卻難以掌握背後原因，無法有效調整訓練方向。]]></summary></entry></feed>

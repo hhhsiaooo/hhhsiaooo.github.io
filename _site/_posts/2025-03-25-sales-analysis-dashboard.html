@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>【個人專案】銷售分析儀表板 | 首頁</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="【個人專案】銷售分析儀表板" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="© 2025 個人專案經歷, All rights reserved." />
+<meta property="og:description" content="© 2025 個人專案經歷, All rights reserved." />
+<link rel="canonical" href="http://hhhsiaooo.github.io/_posts/2025-03-25-sales-analysis-dashboard.html" />
+<meta property="og:url" content="http://hhhsiaooo.github.io/_posts/2025-03-25-sales-analysis-dashboard.html" />
+<meta property="og:site_name" content="首頁" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-03-25T00:00:00+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="【個人專案】銷售分析儀表板" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-03-25T00:00:00+08:00","datePublished":"2025-03-25T00:00:00+08:00","description":"© 2025 個人專案經歷, All rights reserved.","headline":"【個人專案】銷售分析儀表板","mainEntityOfPage":{"@type":"WebPage","@id":"http://hhhsiaooo.github.io/_posts/2025-03-25-sales-analysis-dashboard.html"},"url":"http://hhhsiaooo.github.io/_posts/2025-03-25-sales-analysis-dashboard.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://hhhsiaooo.github.io/feed.xml" title="首頁" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">首頁</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">【個人專案】銷售分析儀表板</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2025-03-25T00:00:00+08:00" itemprop="datePublished">Mar 25, 2025
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h2 id="專案簡介"><strong>專案簡介</strong></h2>
+<blockquote>
+  <p>專案程式碼請看 <a href="https://github.com/hhhsiaooo/sales-dashboard-grafana">GitHub</a>。</p>
+</blockquote>
+
+<p>本專案使用銷售資料產生器建置的電商平台資料庫，實作銷售分析儀表板，
+使用開源視覺化工具 Grafana 介接資料庫 PostgreSQL，
+透過 SQL Query 查詢並計算多維度的銷售分析指標，以瞭解長短期銷售趨勢與客戶行為模式。</p>
+
+<h2 id="核心技術"><strong>核心技術</strong></h2>
+<h4 id="資料庫查詢"><strong>資料庫查詢</strong></h4>
+<ul>
+  <li>使用 <a href="https://www.postgresql.org/">PostgreSQL</a> 資料庫。</li>
+  <li>建立儀表板專用的資料庫使用者，設定唯讀權限，<strong><mark style="background-color: #ffff77; color: black;">提升資料庫操作安全性。</mark></strong></li>
+  <li><strong><mark style="background-color: #ffff77; color: black;">透過SQL Query查詢資料表並計算指標。</mark></strong></li>
+</ul>
+
+<h4 id="資料視覺化"><strong>資料視覺化</strong></h4>
+<ul>
+  <li>使用開源軟體 <a href="https://grafana.com/oss/">Grafana</a>。</li>
+  <li>資料庫介接與圖表製作。</li>
+  <li>儀表板使用者權限管理。</li>
+</ul>
+
+<h2 id="指標規劃"><strong>指標規劃</strong></h2>
+<h4 id="不分時間整體會員樣態"><strong>不分時間整體會員樣態</strong></h4>
+<p>不分時間的會員與商品統計資訊。<strong><mark style="background-color: #ffff77; color: black;">瞭解忠實客戶樣態與主力商品。</mark></strong></p>
+<ul>
+  <li>註冊會員數</li>
+  <li>曾購買會員數</li>
+  <li>新註冊會員數月趨勢</li>
+  <li>購買會員數月趨勢</li>
+  <li>會員性別比例</li>
+  <li>會員年齡比例</li>
+  <li>通路轉換比例</li>
+  <li>各類商品購買次數比例</li>
+  <li>各類商品購買金額比例</li>
+</ul>
+
+<h4 id="年度比較"><strong>年度比較</strong></h4>
+<p>比較今年與去年的訂單量與客單價，呈現各類型商品的銷售佔比。
+<strong><mark style="background-color: #ffff77; color: black;">以評估今年的銷售表現，並發現市場需求的變化</mark></strong>
+，例如特定產品是否比去年更受歡迎。</p>
+<ul>
+  <li>今年訂單量</li>
+  <li>去年訂單量</li>
+  <li>訂單量月趨勢</li>
+  <li>今年客單價</li>
+  <li>去年客單價</li>
+  <li>客單價月趨勢</li>
+  <li>各通路轉換次數</li>
+  <li>各類商品購買次數</li>
+  <li>各類商品購買金額</li>
+</ul>
+
+<h4 id="短期比較"><strong>短期比較</strong></h4>
+<p>比較本周與上周的商品銷售情形，並呈現本周購買會員樣態與轉換率，
+同時可以<strong><mark style="background-color: #ffff77; color: black;">透過篩選器查看不同性別、年齡級距會員的購買情形，評估促銷活動對各類型商品的業績影響。</mark></strong></p>
+<ul>
+  <li>本周訂單數</li>
+  <li>購買會員性別年齡</li>
+  <li>會員購物歷程（轉換率）</li>
+  <li>各類商品購買情形</li>
+  <li>本周促銷活動</li>
+  <li>前周促銷活動</li>
+</ul>
+
+<h2 id="圖表設計"><strong>圖表設計</strong></h2>
+<p>根據各項指標要傳達的資訊，選擇合適且直觀的圖表類型。</p>
+
+<p>以指標「客單價」為例，除呈現今年與去年的數字差異，結合趨勢圖找出造成差異的月份。
+<img src="/assets/images/dashboard_value.jpg" alt="Jekyll Logo" /></p>
+
+<p>以指標「會員購物歷程」為例，使用funnel圖表，呈現不同階段流失的人數比例，以及最終購買的比例。
+<img src="/assets/images/dashboard_funnel.jpg" alt="Jekyll Logo" /></p>
+
+<h2 id="儀表板製作"><strong>儀表板製作</strong></h2>
+<ul>
+  <li>使用 APT 安裝儀表板工具 Grafana。</li>
+  <li>建立 Grafana 專用的資料庫唯讀使用者，以及儀表板的管理者與檢視者。</li>
+  <li>SQL Query 撈取資料，進行指標計算。</li>
+  <li>設定圖表的資料欄位與樣式，例如：圖表類型、XY軸欄位、圖表顏色、字體大小等。</li>
+  <li><strong><mark style="background-color: #ffff77; color: black;">匯出儀表板設定檔，未來可透過此設定檔在其他主機復現儀表板的圖表設定。</mark></strong></li>
+</ul>
+
+<h2 id="資料分析洞察"><strong>資料分析洞察</strong></h2>
+<p>專案使用銷售資料產生器建置的資料庫，雖然無法完全模擬真實的銷售狀況，但仍可
+<strong><mark style="background-color: #ffff77; color: black;">針對隨機生成的資料樣態進行分析，示範儀表板的設計理念與資料解讀方式。</mark></strong></p>
+
+<p><strong>「整體會員樣態」頁面</strong>
+<img src="/assets/images/dashboard_page1.jpg" alt="Jekyll Logo" /></p>
+<ul>
+  <li>雖會員人數達4000多人，但仍有很多會員從未購買過商品。</li>
+  <li>每月新註冊的會員人數相近。</li>
+  <li>每月購買商品的會員人數相近。</li>
+  <li>會員男女比例大致相同，以年齡60歲以上佔多數。</li>
+  <li>寵物零食被購買最多次，但因單價低，購買金額佔比不高。</li>
+  <li>寵物保健食品非購買次數最高，但因單價高，購買金額占比亦高。</li>
+  <li>狗飼料為必需品，購買次數與金額較高。</li>
+</ul>
+
+<p><strong>「年度比較」頁面</strong>
+<img src="/assets/images/dashboard_page2.jpg" alt="Jekyll Logo" /></p>
+<ul>
+  <li>去年訂單量可作為本年訂單量的目標值，截至三月底尚未達到去年業績的四分之一，如非受到銷售淡旺季的影響，應檢討年初促銷活動與銷售狀況。</li>
+  <li>今年平均客單價略低於去年，透過趨勢圖可以看到1-2月客單價較低。</li>
+  <li>去年各通路轉換次數相當，今年在收尋引擎與電子郵件廣告的成效略好。</li>
+  <li>比較今年與去年，各類商品購買次數相當，但金額佔比略有差異。</li>
+  <li>寵物保健食品金額佔比降低，顧客單次購買的數量可能降低，或偏好購買較低價的品牌。</li>
+  <li>狗罐頭金額佔比提高，顧客單次購買的數量可能提高，或偏好購買較高價的品牌。</li>
+</ul>
+
+<p><strong>「短期比較」頁面</strong></p>
+
+
+  </div><a class="u-url" href="/_posts/2025-03-25-sales-analysis-dashboard.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">首頁</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">首頁</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/hhhsiaooo"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">hhhsiaooo</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>© 2025 個人專案經歷, All rights reserved.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>【個人專案】銷售資料產生器 | 首頁</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="【個人專案】銷售資料產生器" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="專案簡介 專案程式碼請看 GitHub。" />
+<meta property="og:description" content="專案簡介 專案程式碼請看 GitHub。" />
+<link rel="canonical" href="http://hhhsiaooo.github.io/jekyll/update/2025/03/25/sales-data-generator.html" />
+<meta property="og:url" content="http://hhhsiaooo.github.io/jekyll/update/2025/03/25/sales-data-generator.html" />
+<meta property="og:site_name" content="首頁" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-03-25T00:00:00+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="【個人專案】銷售資料產生器" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-03-25T00:00:00+08:00","datePublished":"2025-03-25T00:00:00+08:00","description":"專案簡介 專案程式碼請看 GitHub。","headline":"【個人專案】銷售資料產生器","mainEntityOfPage":{"@type":"WebPage","@id":"http://hhhsiaooo.github.io/jekyll/update/2025/03/25/sales-data-generator.html"},"url":"http://hhhsiaooo.github.io/jekyll/update/2025/03/25/sales-data-generator.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://hhhsiaooo.github.io/feed.xml" title="首頁" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">首頁</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">【個人專案】銷售資料產生器</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2025-03-25T00:00:00+08:00" itemprop="datePublished">Mar 25, 2025
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h2 id="專案簡介"><strong>專案簡介</strong></h2>
+<blockquote>
+  <p>專案程式碼請看 <a href="https://github.com/hhhsiaooo/company-operations-data-gen">GitHub</a>。</p>
+</blockquote>
+
+<p>顧客行為資料和銷售記錄對於市場分析與促銷策略研擬至關重要，但受限於隱私問題無法取得真實資料，為模擬真實電商平台運作，
+本專案以作者感興趣的寵物用品作為示範，
+<strong><mark style="background-color: #ffff77; color: black;">使用 Python 生成有邏輯性且自動更新的交易資料，建立電商銷售資料庫，作為未來分析應用的資料來源。</mark></strong></p>
+
+<h2 id="核心技術"><strong>核心技術</strong></h2>
+<h4 id="爬蟲"><strong>爬蟲</strong></h4>
+<ul>
+  <li>使用<strong><mark style="background-color: #ffff77; color: black;">requests + BeautifulSoup</mark></strong>，從 <a href="https://www.momoshop.com.tw/main/Main.jsp">MOMO購物網</a> 取得寵物相關商品資訊。</li>
+  <li>清理資料以取得商品名稱、品牌與價格等資訊。</li>
+</ul>
+
+<h4 id="資料驗證"><strong>資料驗證</strong></h4>
+<ul>
+  <li>使用<strong><mark style="background-color: #ffff77; color: black;">Pydantic</mark></strong>進行資料驗證，確保爬取與生成的資料格式符合資料表規範。</li>
+</ul>
+
+<h4 id="資料庫操作"><strong>資料庫操作</strong></h4>
+<ul>
+  <li><strong><mark style="background-color: #ffff77; color: black;">PostgreSQL</mark></strong>資料庫安裝與設定。</li>
+  <li>設計並建立資料表。</li>
+  <li>使用<strong><mark style="background-color: #ffff77; color: black;">SQLAlchemy ORM</mark></strong>操作資料庫，避免 SQL Injection 攻擊，解決不同資料庫間 SQL 語法差異的問題。</li>
+</ul>
+
+<h4 id="自動化測試"><strong>自動化測試</strong></h4>
+<ul>
+  <li>使用<strong><mark style="background-color: #ffff77; color: black;">pytest</mark></strong>進行自動化測試並計算覆蓋率。</li>
+</ul>
+
+<h4 id="系統服務管理"><strong>系統服務管理</strong></h4>
+<ul>
+  <li>使用 Linux 系統服務管理工具<strong><mark style="background-color: #ffff77; color: black;">systemd</mark></strong>，定期執行資料產生器，以更新銷售資料庫。</li>
+</ul>
+
+<h4 id="環境管理"><strong>環境管理</strong></h4>
+<ul>
+  <li>使用<strong><mark style="background-color: #ffff77; color: black;">Poetry</mark></strong>建立虛擬環境，進行套件管理，並將程式碼打包成可執行的指令。</li>
+  <li>在<strong><mark style="background-color: #ffff77; color: black;">Linux環境部署</mark></strong>系統服務。</li>
+</ul>
+
+<h2 id="資料設計"><strong>資料設計</strong></h2>
+<h4 id="顧客資料表"><strong>顧客資料表</strong></h4>
+<ul>
+  <li>使用 Python 套件 <a href="https://faker.readthedocs.io/en/master">Faker</a> 生成顧客資料。</li>
+  <li>顧客資料包含姓名、性別、生日、聯絡資訊、居住地等資訊。</li>
+  <li><strong><mark style="background-color: #ffff77; color: black;">設定排程每日06:00生成隨機筆數的顧客資料，模擬前一天新會員註冊之情境。</mark></strong></li>
+</ul>
+
+<h4 id="商品資料表"><strong>商品資料表</strong></h4>
+<ul>
+  <li>爬取購物網站的寵物用品資訊。</li>
+  <li>商品資料包含商品名稱、品牌、價格、資料更新時間等資訊。</li>
+  <li><strong><mark style="background-color: #ffff77; color: black;">設定排程每週一04:00爬取最新商品資訊與價格。</mark></strong></li>
+</ul>
+
+<h4 id="促銷檔期表"><strong>促銷檔期表</strong></h4>
+<ul>
+  <li>促銷活動類型包含：滿額折扣、多件優惠、免運滿額贈。</li>
+  <li><strong><mark style="background-color: #ffff77; color: black;">根據消費者心理與平假日的購買行為差異，指定一週七天適用的促銷活動類型，並設定各類型商品的購買機率、購買數量、每日交易數量。</mark></strong>
+    <ul>
+      <li>週二至週四為工作日，購買低峰，推出多件優惠引導消費者囤貨，單一商品購買數量較高，且偏好購買必需品或消耗品，例如：飼料、罐頭及尿布墊。</li>
+      <li>週六與週日為假日，消費者出門遊玩逛街較少線上購物，推出滿額贈及免運活動，減少購買猶豫時間，單一商品購買數量較低，但交易筆數較高，消費者偏好購買非必需品或低價商品，例如：零食及潔牙骨。</li>
+      <li>憂鬱週一購物紓解壓力，快樂週五迎接假日犒賞自己，購買高峰，推出滿額折扣，用高額折扣刺激購物，消費者偏好購買單價較高的商品，以達折扣門檻，例如：保健食品及凍乾零食。</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="促銷活動表"><strong>促銷活動表</strong></h4>
+<ul>
+  <li><strong><mark style="background-color: #ffff77; color: black;">基於三種促銷活動類型（滿額折扣、多件優惠、免運滿額贈），設定活動內容、折扣門檻與贈品。</mark></strong></li>
+  <li>促銷活動包含活動名稱、活動類型、折扣門檻值、折扣比率、贈品等資訊。</li>
+</ul>
+
+<h4 id="顧客行為資料表"><strong>顧客行為資料表</strong></h4>
+<ul>
+  <li><strong><mark style="background-color: #ffff77; color: black;">設定排程每日06:00隨機選取資料庫中的顧客資料與產品資料，產生顧客行為資料。</mark></strong></li>
+  <li>顧客行為包含瀏覽商品、加入購物車及購買商品。</li>
+  <li>確保顧客行為發生時間，<strong><mark style="background-color: #ffff77; color: black;">遵守瀏覽商品-&gt;加入購物車-&gt;購買商品的順序。</mark></strong></li>
+</ul>
+
+<h4 id="交易資料表"><strong>交易資料表</strong></h4>
+<ul>
+  <li>儲存顧客行為資料中的購買資料。</li>
+  <li><strong><mark style="background-color: #ffff77; color: black;">選擇當天適用的折扣活動，並計算折扣後的結帳金額。</mark></strong></li>
+</ul>
+
+
+  </div><a class="u-url" href="/jekyll/update/2025/03/25/sales-data-generator.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">首頁</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">首頁</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/hhhsiaooo"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">hhhsiaooo</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>© 2025 個人專案經歷, All rights reserved.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
