@@ -6,11 +6,13 @@ categories: jekyll update
 ---
 
 ## **專案簡介**
-> 專案程式碼請看 [GitHub][github-link]。
-
 本專案使用銷售資料產生器建置的電商平台資料庫，實作銷售分析儀表板，
 使用開源視覺化工具 Grafana 介接資料庫 PostgreSQL，
 透過 SQL Query 查詢並計算多維度的銷售分析指標，以瞭解長短期銷售趨勢與客戶行為模式。
+> 程式碼請看 [GitHub][github-sql-link]。
+
+同時也利用Python開發資料管線，進行資料格式轉換。
+> 程式碼請看 [GitHub][github-pipeline-link]。
 
 ## **核心技術**
 #### **資料庫查詢**
@@ -100,7 +102,9 @@ categories: jekyll update
 * 狗罐頭金額佔比提高，顧客單次購買的數量可能提高，或偏好購買較高價的品牌。
 
 **「短期比較」頁面**
+![Jekyll Logo](/assets/images/dashboard_page3.jpg)
 
-[github-link]: https://github.com/hhhsiaooo/sales-dashboard-grafana
+[github-sql-link]: https://github.com/hhhsiaooo/sales-dashboard-grafana
+[github-pipeline-link]: https://github.com/hhhsiaooo/sales-dashboard-pipeline
 [postgresql-link]: https://www.postgresql.org/
 [grafana-link]: https://grafana.com/oss/

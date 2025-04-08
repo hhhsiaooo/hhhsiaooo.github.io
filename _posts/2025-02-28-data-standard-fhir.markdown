@@ -10,7 +10,7 @@ categories: jekyll update
 無法滿足智慧醫療發展的需求。
 
 為解決此問題，本專案協助盤點醫療品質指標相關資料，
-基於**<mark style="background-color: #ffff77; color: black;">FHIR（Fast Healthcare Interoperability Resources）及 TW Core IG</mark>**進行規範，
+基於**<mark style="background-color: #ffff77; color: black;">FHIR（Fast Healthcare Interoperability Resources）</mark>**進行規範，
 並透過示範儀表板，驗證標準化資料的應用可行性。
 
 ## **實作流程**
@@ -24,7 +24,6 @@ categories: jekyll update
 #### 1.指標設計
 領域專家參考國內外論文，並根據美國醫學研究院提出的**<mark style="background-color: #ffff77; color: black;">六大醫療品質核心構面</mark>**，
 進行指標評估與設計，釐清計算所需的資料欄位，並建立概念性定義。
-該階段定義出本專案使用的品質指標，包含存活出院比率、出院時意識清楚比率等。
 
 ![Jekyll Logo](/assets/images/fhir_core.jpg)
 
@@ -58,9 +57,8 @@ categories: jekyll update
 ![Jekyll Logo](/assets/images/fhir_dashboard.jpg)
 
 ## **專案成就與自我成長**
-> 在此專案中，我對**<mark style="background-color: #ffff77; color: black;">FHIR與TW Core IG規範</mark>**有了進一步的認識，
+> 在此專案中，我對**<mark style="background-color: #ffff77; color: black;">FHIR規範</mark>**有了進一步的認識，
 > 與領域專家及技術團隊緊密合作，
 > **<mark style="background-color: #ffff77; color: black;">將醫療品質指標的概念性定義，轉化為結構化可交換的資料格式</mark>**，
-> 並運用驗證工具確保資料合規。此外，團隊之間保持緊密溝通，
-> 靈活調整專案執行方式與順序，這也是專案能夠如期交付的關鍵。
+> 並運用驗證工具確保資料合規。此外，團隊之間保持緊密溝通，靈活調整專案執行方式與順序，這也是專案能夠如期交付的關鍵。
 

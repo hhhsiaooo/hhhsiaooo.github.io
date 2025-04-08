@@ -13,8 +13,8 @@ categories: jekyll update
 因此該專案的目標，就是**<mark style="background-color: #ffff77; color: black;">結合設計思考與資料思考</mark>**，
 突破傳統方法的限制，透過**<mark style="background-color: #ffff77; color: black;">以人為本的發散式探索與數據驅動決策</mark>**，提供更高效的解決方案。
 
-**<mark style="background-color: #ffff77; color: black;">曾協助三位客戶舉辦資料思考工作坊</mark>**，
-透過專家引導參與人員，進行先發散再收斂的思考練習，針對其業務痛點提案，深入解析服務、流程與資料的細節狀況，
+**<mark style="background-color: #ffff77; color: black;">曾舉辦多次資料思考工作坊</mark>**，
+由專家引導參與人員，進行先發散再收斂的思考練習，針對其業務痛點提案，深入解析服務、流程與資料的細節狀況，
 並協同資料分析師，將業務問題轉換為資料科學問題，
 **<mark style="background-color: #ffff77; color: black;">同時規劃概念性測試的分析應用架構</mark>**，
 於課程中實際操作資料，產出分析結果，透過資料驗證後的解決方案，提升決策品質。
@@ -43,13 +43,12 @@ categories: jekyll update
 * 處方性分析：提供最佳解決方案，運用最佳化演算法或機器學習自動化決策。例如：透過銷售趨勢預測與客群分析，推薦合適的促銷方案；根據交通流量調整紅綠燈時間，減少交通壅塞狀況。
 
 #### 3.工作坊實作
-講師基於設計思考的**<mark style="background-color: #ffff77; color: black;">Double Diamond 雙鑽石模型</mark>**，
+講師基於設計思考的Double Diamond 雙鑽石模型，
 設計系列課程與討論內容，引導參與人員不斷進行擴散性思考與收斂性思考，
 強調先探索問題，再尋找解決方案，並規劃資料分析應用架構，實際產出分析結果。
 
 * 問題釐清：釐清問題類型（包含**<mark style="background-color: #ffff77; color: black;">任務流程、管理制度、軟硬體因素</mark>**等），
-盤點對應的**<mark style="background-color: #ffff77; color: black;">利害關係人</mark>**，
-運用設計思考的同理心精神，確保問題定義能考量不同角色的需求。
+盤點對應的利害關係人，運用設計思考的同理心精神，確保問題定義能考量不同角色的需求。
 * 問題類型：透過**<mark style="background-color: #ffff77; color: black;">四象限法</mark>**，釐清問題的困難度與價值性，
 **<mark style="background-color: #ffff77; color: black;">找出困難度低價值性高的問題</mark>**，列為優先解決目標。
 * 專案流程：列出**<mark style="background-color: #ffff77; color: black;">問題相關的業務單位與作業流程</mark>**，
@@ -65,7 +64,7 @@ categories: jekyll update
 各組分享工作坊最終成果，並由專業講師與其他團隊給予意見回饋與未來建議。
 
 以上述案例為例，針對**<mark style="background-color: #ffff77; color: black;">「客服電話諮詢量大且問題重複」</mark>**
-之議題，提出改善建議如下：
+之議題，利用ChatGPT產製問答集並製作HTML檔案，並提出改善建議如下：
 * 可延續本次產出的結構化常見問題與檔案格式，更新豐富資料內容。
 * 留意ChatGPT API介接的**<mark style="background-color: #ffff77; color: black;">成本費用與資安議題</mark>**。
 * 未來可彙集其他利害關係單位與資訊廠商，探討其他問題類型，**<mark style="background-color: #ffff77; color: black;">研擬資料收集架構</mark>**。
@@ -75,7 +74,3 @@ categories: jekyll update
 > 起初，我擔心自己會問出「笨問題」，但隨著與客戶的反覆問答，
 > **<mark style="background-color: #ffff77; color: black;">業務思考與資料思考的碰撞激發了更多解決方案的可能性，讓我逐漸放下顧慮，更勇於提問。</mark>**
 > 同時，透過接觸不同產業的問題痛點，我對各種業務領域的理解也更加深入。
->
-> 經過工作坊的概念性測試，其中一位客戶對於資料分析應用產生更多的想法，
-> 進而促成新的資料分析專案，這讓我們能夠進一步聚焦客戶需求，規劃更細緻的應用框架，推動數位轉型，實現數據驅動決策。
-
